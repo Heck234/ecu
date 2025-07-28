@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply bg-gray-950 text-white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@keyframes typing {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+.animate-typing {
+  width: 0;
+  animation: typing 4s steps(30, end) infinite;
+}
+
